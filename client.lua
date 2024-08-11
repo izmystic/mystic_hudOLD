@@ -35,7 +35,7 @@ RegisterNetEvent('mystic_hud:client:sendAOP', function(newAOP)
     Config.AOP = newAOP
 end)
 
-RegisterNetEvent('mystic_hud:server:togglePT', function(newPeacetime)
+RegisterNetEvent('mystic_hud:client:sendPT', function(newPeacetime)
     Config.Peacetime = newPeacetime
 end)
 
