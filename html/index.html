@@ -7,10 +7,9 @@
   </head>
   <body>
     <div id="hud-container">
-      <div :style="{color: secondaryColor}" v-show="show">| <a :style="{color: primaryColor}"> {{direction}} </a> | <a :style="{color: secondaryColor}">{{street}}</a> </div>
-      <div :style="{color: primaryColor}" v-show="show">Nearest Postal: <a :style="{color: secondaryColor}">{{postal}}</a> </div>
-      <div :style="{color: primaryColor}" v-show="show">AOP: <a :style="{color: secondaryColor}">{{aop}}</a> | Peacetime: <a :style="{color: secondaryColor}">{{peacetime}}</a>
-      </div>
+      <div :style="{color: secondaryColor}" v-show="show">| <a :style="{color: primaryColor}"> {{direction}} </a> | <a :style="{color: secondaryColor}">{{street}}</a></div>
+      <div :style="{color: primaryColor}" v-show="show">Nearest Postal: <a :style="{color: secondaryColor}">{{postal}}</a></div>
+      <div :style="{color: primaryColor}" v-show="show">AOP: <a :style="{color: secondaryColor}">{{aop}}</a> | Peacetime: <a :style="{color: secondaryColor}">{{peacetime}}</a></div>
     </div>
   </body>
 </html>

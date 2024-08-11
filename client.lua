@@ -11,19 +11,20 @@ local function getDirection(heading)
 end
 
 local function disableControls()
-    DisablePlayerFiring(ped, true)     -- weapon firing
-    DisableControlAction(0, 24, true)  -- attack
-    DisableControlAction(0, 25, true)  -- aim
-    DisableControlAction(0, 47, true)  -- weapon
-    DisableControlAction(0, 58, true)  -- weapon
-    DisableControlAction(1, 37, true)  -- change weapon
-    DisableControlAction(0, 140, true) -- melee
-    DisableControlAction(0, 141, true) -- melee
-    DisableControlAction(0, 142, true) -- melee
-    DisableControlAction(0, 143, true) -- melee
-    DisableControlAction(0, 263, true) -- melee
-    DisableControlAction(0, 264, true) -- melee
-    DisableControlAction(0, 257, true) -- melee
+    SetCurrentPedWeapon(cache.ped, `WEAPON_UNARMED`, true) -- remove current weapon
+    DisablePlayerFiring(ped, true)                         -- weapon firing
+    DisableControlAction(0, 24, true)                      -- attack
+    DisableControlAction(0, 25, true)                      -- aim
+    DisableControlAction(0, 47, true)                      -- weapon
+    DisableControlAction(0, 58, true)                      -- weapon
+    DisableControlAction(1, 37, true)                      -- change weapon
+    DisableControlAction(0, 140, true)                     -- melee
+    DisableControlAction(0, 141, true)                     -- melee
+    DisableControlAction(0, 142, true)                     -- melee
+    DisableControlAction(0, 143, true)                     -- melee
+    DisableControlAction(0, 263, true)                     -- melee
+    DisableControlAction(0, 264, true)                     -- melee
+    DisableControlAction(0, 257, true)                     -- melee
 end
 
 AddEventHandler('onClientMapStart', function()
